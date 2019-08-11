@@ -36,7 +36,46 @@ class Auth extends React.Component {
         },
         valid: false,
         touched: false
-      }
+      },
+      firstName: {
+        elementType: 'input',
+        elementConfig: {
+          type: 'text',
+          placeholder: 'First Name'
+        },
+        value: '',
+        validation: {
+          required: true,
+        },
+        valid: false,
+        touched: false
+      },
+      lastName: {
+        elementType: 'input',
+        elementConfig: {
+          type: 'text',
+          placeholder: 'Last Name'
+        },
+        value: '',
+        validation: {
+          required: true,
+        },
+        valid: false,
+        touched: false
+      },
+      age: {
+        elementType: 'input',
+        elementConfig: {
+          type: 'text',
+          placeholder: 'Age'
+        },
+        value: '',
+        validation: {
+          required: true,
+        },
+        valid: false,
+        touched: false
+      },
     },
     isSignUp: true
   }
@@ -87,7 +126,7 @@ class Auth extends React.Component {
 
   submitHandler = (event) => {
     event.preventDefault();
-    this.props.onAuth(this.state.controls.email.value, this.state.controls.password.value);
+    this.props.onAuth(this.state.controls.email.value, this.state.controls.password.value, this.state.isSignUp);
   }
 
   switchAuthHandler = () => {
@@ -134,7 +173,7 @@ class Auth extends React.Component {
 
 const mapDispatchToProps = dispatch => {
   return {
-    onAuth: (email, password) => dispatch(actions.auth(email, password))
+    onAuth: (email, password, isSignUp) => dispatch(actions.auth(email, password, isSignUp))
   };
 };
 

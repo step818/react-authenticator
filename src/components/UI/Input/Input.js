@@ -10,7 +10,6 @@ const input = (props) => {
       inputElement = <input 
           className={classes.InputElement} 
           {...props.elementConfig} 
-          //Might not need this value property
           value={props.value} 
           onChange={props.changed}/>;
       break;
