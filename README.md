@@ -1,10 +1,28 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#_SignUp/Login Authenticator_
 
-## Available Scripts
+## Description & Specs
 
-In the project directory, you can run:
+This is a code challenge meant to take 5 basic inputs from a user:
+  1. First Name
+  2. Last Name
+  3. Age
+  4. Email address
+  5. Password,
+
+and register the user. Then the same user can log-in and the data the user entered will be retrieved. Firebase database and authicator was used for this project. So far, the app doesn't fululy work, but the user can successfully register their email and password, and log back in. Verification is given in the console and also in the backend in firebase.
+
+## Setup/Installation Requirements
+
+_**In the command line, you can install npm:*_
+
+### `npm install`
+
+_Installs Node modules needed to run and build the app._
+
+In the command line, you can host locally:
 
 ### `npm start`
+
 
 Runs the app in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
@@ -36,6 +54,10 @@ If you aren’t satisfied with the build tool and configuration choices, you can
 Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+## Technologies Used
+
+_Windows 10.1, Visual Studio Code, React, Redux, Axios, Firebase _
 
 ## Learn More
 
