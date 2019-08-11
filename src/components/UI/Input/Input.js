@@ -11,19 +11,22 @@ const input = (props) => {
           className={classes.InputElement} 
           {...props.elementConfig} 
           //Might not need this value property
-          value={props.value} />;
+          value={props.value} 
+          onChange={props.changed}/>;
       break;
     case ('textarea'):
       inputElement = <textarea 
           className={classes.InputElement} 
           {...props.elementConfig} 
-          value={props.value} />;
+          value={props.value} 
+          onChange={props.changed}/>;
       break;
     default:
       inputElement = <input 
           className={classes.InputElement} 
           {...props.elementConfig} 
-          value={props.value} />;
+          value={props.value} 
+          onChange={props.changed}/>;
   }
 
   return(
